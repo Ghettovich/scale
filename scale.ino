@@ -3,6 +3,7 @@
 #include <EthernetENC.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
+#include <EEPROMex.h>
 
 void setup() {
   // put your setup code here, to run once:
@@ -11,7 +12,6 @@ void setup() {
 
   hx711Setup();
   Serial.println("Bin scale setup ready");
-
 
   setupMqttClient();
   Serial.println("Mqtt client Ready.");
